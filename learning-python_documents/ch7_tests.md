@@ -94,14 +94,24 @@ $ nosetests tests/test_ch7/
 ### Profiling Python
 
 * Profiling : having the application run while keeping track of several different parameters, like the number of times a function is called, the amount of time spent inside it...
+
 * `profile` & `cProfile` 
+
   * `cProfile` is recommended for most users, it's a C extension with reasonable overhead that makes it suitable for profiling long running programs
   * `profile` is a pure Python module whose interface is imitated by cProfile, but which adds significant overhead to profiled programs
-  * 
+
+  
+
+```
+$ python -m cProfile profiling/triples.py
+```
+
+
 
 * `determinist` vs `statistical` profiling
-  * `determinist` : all function calls, function returns and exception events are monitored, and precise timings are made for the intervals between these events
-  * `statistical` : randomly samples the effective instruction pointer, and deduces where time is being spent
-    * less overhead
-    * provides only approximate results
+
+* `determinist` : all function calls, function returns and exception events are monitored, and precise timings are made for the intervals between these events
+* `statistical` : randomly samples the effective instruction pointer, and deduces where time is being spent
+  * less overhead
+  * provides only approximate results
 
