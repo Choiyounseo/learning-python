@@ -24,6 +24,7 @@
 
 * ORM(object-relational mapping)
 
+  * http://www.incodom.kr/ORM
   * OOP언어에서, RDBMS를 연동할 때, 클라이언트 라이브러리/SQL을 대체하여 구현가능
     * `RDBMS`
       * RDB를 생성하고, 수정하고, 관리할 수 있는 소프트웨어
